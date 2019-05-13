@@ -66,9 +66,9 @@ int main() {
     ;
 
       testcase.setname("powerset")
-    .CHECK_EQUAL("{} {1} {2} {1,2} {3} {1,3} {2,3} {1,2,3}" , iterable_to_string(range(1,4)))
-    .CHECK_EQUAL("{} {1.1} {2.1} {1.1,2.1} {3.1} {1.1,3.1} {2.1,3.1} {1.1,2.1,3.1}", iterable_to_string(range(1.1,4.1)))
-    .CHECK_EQUAL("{} {a} {b} {a,b}",  iterable_to_string(range('a','c')))
+    .CHECK_EQUAL("{} {1} {2} {1,2} {3} {1,3} {2,3} {1,2,3}" , iterable_to_string(powerset(1,4)))
+    .CHECK_EQUAL("{} {1.1} {2.1} {1.1,2.1} {3.1} {1.1,3.1} {2.1,3.1} {1.1,2.1,3.1}", iterable_to_string(powerset(1.1,4.1)))
+    .CHECK_EQUAL("{} {a} {b} {a,b}",  iterable_to_string(powerset('a','c')))
     .CHECK_EQUAL("{} {a} {b} {a,b} {c} {a,c} {b,c} {a,b,c}", iterable_to_string( "abc"))  
     .CHECK_EQUAL("{}", iterable_to_string( ""))  
     ;
