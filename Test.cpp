@@ -24,7 +24,7 @@ int main() {
 	int signal = setjmp(badkan::longjmp_buffer);
 	if (signal == 0) {
 
-/*	testcase.setname("range")
+	testcase.setname("range")
     .CHECK_EQUAL("1 2 3 4" , iterable_to_string(range(1,5)))
     .CHECK_EQUAL("1.1 2.1 3.1 4.1", iterable_to_string(range(1.1,5.1)))
     .CHECK_EQUAL("a b c d e f",  iterable_to_string(range('a','g')))
@@ -73,7 +73,7 @@ int main() {
     .CHECK_EQUAL("{}", iterable_to_string( ""))  
     ;
     
-    */
+    
 
 
 
